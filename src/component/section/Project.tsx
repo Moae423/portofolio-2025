@@ -4,6 +4,7 @@ import { clashDisplay } from "@/assets/fonts/font";
 import project1 from "@/assets/image/Image (1).jpg";
 import project2 from "@/assets/image/puskesmas.jpg";
 import project3 from "@/assets/image/Code.jpg";
+import project4 from "@/assets/image/kue.png";
 import Carousel from "@/components/ui/carousel";
 const slideData = [
   {
@@ -24,6 +25,12 @@ const slideData = [
     description: "View On Github",
     github: "https://github.com/Moae423/backend-visca",
     src: project3,
+  },
+  {
+    title: "Melino Bakery",
+    description: "View On Github",
+    github: "https://kue-manja.vercel.app/",
+    src: project4,
   },
 ];
 const Project = () => {
