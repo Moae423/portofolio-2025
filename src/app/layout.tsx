@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
-import { Gorstek } from "@/assets/image/fonts/font";
+import { Gorstek } from "@/assets/fonts/font";
 export const metadata: Metadata = {
   title: "Daffa Rihadatul Fairus",
   description:
