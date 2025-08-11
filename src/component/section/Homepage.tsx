@@ -18,11 +18,11 @@ const Homepage = () => {
       {/* Overlay teks */}
       <div className="absolute inset-0 flex flex-col items-center justify-end gap-3 bg-black/40 p-4 sm:p-10 m-2 sm:m-4 rounded-2xl sm:rounded-4xl">
         <h1
-          className={`${clashDisplay.className} text-4xl sm:text-6xl lg:text-[96px] text-white font-bold text-center leading-tight sm:leading-[1.2]`}
+          className={`${clashDisplay.className} text-4xl sm:text-6xl lg:text-[96px] text-white font-bold text-start md:text-center leading-tight sm:leading-[1.2]`}
         >
-          Daffa Rihadatul Fairus
+          Turning Vision Into Reality
         </h1>
-        <p className="max-w-xl sm:max-w-4xl text-center text-sm sm:text-base lg:text-lg text-gray-200 px-2 sm:px-0">
+        <p className="max-w-xl sm:max-w-4xl text-start md:text-center text-sm sm:text-base lg:text-lg text-gray-200 px-2 sm:px-0">
           I am an Information Systems fresh graduate from Universitas Putra
           Indonesia “YPTK” Padang with practical experience in computer
           networking and web development. Proficient in managing and configuring
