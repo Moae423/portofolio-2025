@@ -118,10 +118,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">
             {title}
           </h2>
-          <Link href={github}>
+          <Link href={github} target="_blank" rel="noopener noreferrer">
             <Button
               variant={"default"}
-              className="hover:scale-105 active:scale-100 hover:bg-white hover:text-black cursor-pointer my-3"
+              className="hover:scale-105 active:scale-100 hover:bg-white hover:text-black transition-all ease-in-out duration-300 cursor-pointer my-3"
             >
               {description}
             </Button>

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/components/Navbar";
 import { Gorstek } from "@/assets/fonts/font";
+import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Daffa Rihadatul Fairus",
   description:
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${Gorstek.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

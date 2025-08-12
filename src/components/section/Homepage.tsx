@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import testing from "@/assets/image/testing.jpg";
 import { clashDisplay } from "@/assets/fonts/font";
@@ -10,6 +11,7 @@ const Homepage = () => {
       {/* Gambar sebagai background */}
       <Image
         src={testing}
+        loading="eager"
         alt="image"
         className="w-full h-full object-cover rounded-2xl sm:rounded-4xl"
         priority
@@ -31,7 +33,7 @@ const Homepage = () => {
         </p>
         <Button
           variant="default"
-          className="flex items-center gap-2 px-4 py-2 text-sm sm:text-base"
+          className="flex items-center gap-2 px-4 py-2 text-sm sm:text-base hover:bg-white/90 text-white cursor-pointer relative z-10 hover:text-black hover:scale-105 active:scale-100 transition-all ease-in-out duration-300"
         >
           <BriefcaseBusiness className="w-4 h-4" />
           Hire Me
@@ -40,5 +42,4 @@ const Homepage = () => {
     </div>
   );
 };
-
 export default Homepage;
