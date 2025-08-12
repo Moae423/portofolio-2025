@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import React, { useEffect } from "react";
+import React from "react";
 import { clashDisplay } from "@/assets/fonts/font";
 import project1 from "@/assets/image/Image (1).jpg";
 import project2 from "@/assets/image/puskesmas.jpg";
@@ -8,6 +8,7 @@ import project3 from "@/assets/image/Code.jpg";
 import project4 from "@/assets/image/kue.png";
 import Carousel from "@/components/ui/carousel";
 import { BriefcaseBusiness } from "lucide-react";
+
 const slideData = [
   {
     title:
@@ -35,17 +36,18 @@ const slideData = [
     src: project4,
   },
 ];
+
 const Project = () => {
   return (
-    <div className="w-full min-h-screen px-4 sm:px-6 md:px-8 py-8 sm:py-12 overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 overflow-hidden lg:block">
       {/* Header */}
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-        <div className="flex flex-col gap-3">
+      <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-between text-center lg:text-left gap-6">
+        <div className="flex flex-col gap-3 max-w-2xl">
           <div className="text-sm sm:text-base">
             <span>[1]</span> What I do?
           </div>
           <div
-            className={`${clashDisplay.className} text-3xl sm:text-4xl md:text-5xl lg:text-[63px] max-w-5xl font-bold  mb-4`}
+            className={`${clashDisplay.className} text-3xl sm:text-4xl md:text-5xl lg:text-[63px] max-w-5xl font-bold mb-4`}
           >
             Crafting Solutions, From Infrastructure to Innovation
           </div>

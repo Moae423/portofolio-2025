@@ -22,7 +22,13 @@ const Fadeup = ({
     gsap.fromTo(
       ref.current,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: duration, delay: delay }
+      {
+        opacity: 1,
+        y: 0,
+        duration: duration,
+        delay: delay,
+        ease: "power4.inOut",
+      }
     );
   }, [delay, duration]);
 
